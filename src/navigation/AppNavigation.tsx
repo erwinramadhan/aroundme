@@ -9,6 +9,7 @@ import {
   NavigationContainer,
   NavigationContainerRef,
 } from '@react-navigation/native';
+import RNBootSplash from 'react-native-bootsplash';
 
 import GetContext from '../context/Context';
 import Screens from './Screens';
@@ -40,6 +41,7 @@ const AppNavigation = () => {
   const onReady = () => {
     isReadyRef.current = true;
     routeNameRef.current = navigationRef.current?.getCurrentRoute()?.name;
+    RNBootSplash.hide({fade: true});
   };
 
   return (
