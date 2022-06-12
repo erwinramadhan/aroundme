@@ -28,7 +28,9 @@ jobs:
       
       # Install Node  
       - name: Installing node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 14
 
       # Install React Native CLI
       - name: Install React Native CLI
