@@ -1,5 +1,5 @@
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(false);
   return {
     presets: ['module:metro-react-native-babel-preset'],
     plugins: [
@@ -15,6 +15,17 @@ module.exports = function (api) {
             '@screen': './src/screen',
             '@store': './src/store',
           },
+        },
+      ],
+      [
+        'module:react-native-dotenv',
+        {
+          moduleName: '@env',
+          path: '.env',
+          blocklist: null,
+          allowlist: null,
+          safe: true,
+          allowUndefined: true,
         },
       ],
     ],

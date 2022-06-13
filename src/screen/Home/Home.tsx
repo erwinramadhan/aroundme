@@ -5,13 +5,13 @@ import Container from '@components/Container/Container';
 import GetContext from '../../context/Context';
 import Text from '@components/Text/Text';
 import {useAppSelector} from '@hooks/hooks';
+import {GOOGLE_CLIENT_ID} from '@env';
 
 import Styles from './style';
 
 const Context = GetContext();
 GoogleSignin.configure({
-  webClientId:
-    '728383528534-7q4v8q8e1d9jno75pounoih4cp8869o4.apps.googleusercontent.com',
+  webClientId: GOOGLE_CLIENT_ID,
 });
 
 const Home = () => {
