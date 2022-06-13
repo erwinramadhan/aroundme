@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import {StyleSheet} from 'react-native';
 import {
   SafeAreaProvider,
   initialWindowMetrics,
@@ -18,11 +19,11 @@ const Context = GetContext();
 
 const navigationRef = React.createRef<NavigationContainerRef<ParamListBase>>();
 
-const navigate = (name: any, params: any) => {
-  if (navigationRef.current?.isReady()) {
-    navigationRef.current?.navigate(name, params);
-  }
-};
+// const navigate = (name: any, params: any) => {
+//   if (navigationRef.current?.isReady()) {
+//     navigationRef.current?.navigate(name, params);
+//   }
+// };
 
 const AppNavigation = () => {
   const routeNameRef = useRef<string>();
@@ -45,7 +46,9 @@ const AppNavigation = () => {
   };
 
   return (
-    <SafeAreaProvider initialMetrics={initialWindowMetrics} style={{flex: 1}}>
+    <SafeAreaProvider
+      initialMetrics={initialWindowMetrics}
+      style={Styles.SafeAreaProvider}>
       <NavigationContainer
         ref={navigationRef}
         onReady={onReady}
@@ -57,3 +60,9 @@ const AppNavigation = () => {
 };
 
 export default AppNavigation;
+
+const Styles = StyleSheet.create({
+  SafeAreaProvider: {
+    flex: 1,
+  },
+});

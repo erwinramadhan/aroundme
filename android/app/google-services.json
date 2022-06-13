@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "728383528534",
+    "project_id": "aroundme-e6ab9",
+    "storage_bucket": "aroundme-e6ab9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728383528534:android:ab46fdbde6745484f425f7",
+        "android_client_info": {
+          "package_name": "com.aroundme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728383528534-7v87uholgarvopblpf2j8ghol0tlcvli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aroundme",
+            "certificate_hash": "e9613d4c98c542f3f1053c974bb358833d79ef9e"
+          }
+        },
+        {
+          "client_id": "728383528534-7q4v8q8e1d9jno75pounoih4cp8869o4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIC19-IKq3FYq4wjQO6YV14n2L_mugZNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728383528534-7q4v8q8e1d9jno75pounoih4cp8869o4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
