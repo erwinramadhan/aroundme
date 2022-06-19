@@ -3,6 +3,19 @@ import {ColorValue} from 'react-native';
 
 export interface ITheme {
   colors: ThemeColors;
+  fonts: ThemeFonst;
+}
+
+export interface ThemeFonst {
+  thin: string;
+  light: string;
+  extraLight: string;
+  regular: string;
+  medium: string;
+  semiBold: string;
+  bold: string;
+  extraBold: string;
+  black: string;
 }
 
 export interface IThemeProvider {
@@ -12,5 +25,9 @@ export interface IThemeProvider {
 }
 
 export interface ThemeColors {
+  athensGray: ColorValue;
+  alto: ColorValue;
+  gray: ColorValue;
+  primary: ColorValue;
   text: ColorValue;
 }
